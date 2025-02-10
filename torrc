@@ -1,0 +1,11 @@
+# torrc
+
+# Log only error messages to stdout
+Log err stdout
+
+# Directory for storing Onion service keys and hostname
+HiddenServiceDir /var/lib/tor/hidden_service
+HiddenServiceVersion 3
+
+# Forward incoming Tor traffic on port 80 to 127.0.0.1:80
+HiddenServicePort 80 127.0.0.1:80
